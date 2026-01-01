@@ -1,19 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Thiri Aung</title>
   <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<section id="projects">
-  <h2>Projects</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Auth Service</h3>
-      <p>JWT‑based authentication microservice with role‑based access.</p>
+  <nav>
+    <div class="nav-container">
+      <div class="logo">ThiriAung.dev</div>
+      <div class="nav-links">
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </div>
-    <div class="card">
-      <h3>Order API</h3>
-      <p>REST API handling 50k+ daily requests with PostgreSQL.</p>
+  </nav>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Auth Service</h3>
+        <p>JWT‑based authentication microservice with role‑based access.</p>
+      </div>
+      <div class="card">
+        <h3>Order API</h3>
+        <p>REST API handling 50k+ daily requests with PostgreSQL.</p>
+      </div>
+      <div class="card">
+        <h3>Event Processor</h3>
+        <p>Async event processing using queues and background workers.</p>
+      </div>
     </div>
-    <div class="card">
-      <h3>Event Processor</h3>
-      <p>Async event processing using queues and background workers.</p>
-    </div>
-  </div>
-</section>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Thiri Aung. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
