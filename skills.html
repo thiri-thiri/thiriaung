@@ -1,11 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills - Thiri Aung</title>
   <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="grid">
-    <div class="card"><h3>Languages</h3><p>C++, JavaScript, C#, Java, PHP, Python, Node.js</p></div>
-    <div class="card"><h3>Frameworks</h3><p>Laravel, Spring Boot, Express, FastAPI</p></div>
-    <div class="card"><h3>Databases</h3><p>MySQL, PostgreSQL, MongoDB, Redis</p></div>
-    <div class="card"><h3>DevOps</h3><p>Docker, CI/CD, Linux, AWS</p></div>
-  </div>
-</section>
+  <nav>
+    <div class="nav-container">
+      <div class="logo">ThiriAung.dev</div>
+      <div class="nav-links">
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="card"><h3>Languages</h3><p>C++, JavaScript, C#, Java, PHP, Python, Node.js</p></div>
+      <div class="card"><h3>Frameworks</h3><p>Laravel, Spring Boot, Express, FastAPI</p></div>
+      <div class="card"><h3>Databases</h3><p>MySQL, PostgreSQL, MongoDB, Redis</p></div>
+      <div class="card"><h3>DevOps</h3><p>Docker, CI/CD, Linux, AWS</p></div>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Thiri Aung. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
